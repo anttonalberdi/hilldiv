@@ -1,0 +1,10 @@
+citHeader("To cite hilldiv in publications, please use:")
+
+citEntry(entry = "article",
+  author = "Antton Alberdi",
+  title = "hilldiv: an R package for the integral analysis of diversity based on Hill numbers",
+  journal = "bioRxiv",
+  year = "2019",
+  url = "https://www.biorxiv.org/content/10.1101/545665v1",
+  textVersion = "Alberdi A, Gilbert MTP. 2019. hilldiv: an R package for the integral analysis of diversity based on Hill numbers. bioRxiv: 545665."
+)

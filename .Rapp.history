@@ -1,0 +1,33 @@
+~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.tree
+tree <- read.tree("~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.tree")
+library(ape)
+tree <- read.tree("~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.tree")
+tre
+tree
+tree <- tree[[11]]
+plot(tree)
+library(phylotools)
+install.packages("phylotools")
+library(phylotools)
+tree.ultra <- force.ultrametric(tree, method=c("nnls"))
+library(phytools)
+install.packages("phytools")
+library(phytools)
+tree.ultra <- force.ultrametric(tree, method=c("nnls"))
+plot(tree.ultra)
+write.tree(tree.ultra,""~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.ultra.tree")
+write.tree(tree.ultra,"~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.ultra.tree")
+library(devtools)
+devtools::install_github("USCBiostats/rphyloxml")
+library(rphyloxml)#
+library(ape)#
+library(xml2)
+install.packages("rphyloxml")
+install_github("USCBiostats/rphyloxml")
+system('defaults write org.R-project.R force.LANG en_US.UTF-8')
+setwd("/Users/anttonalberdi/github/hilldiv/")#
+library(devtools)#
+document()#
+create_package("/Users/anttonalberdi/github/hilldiv/")#
+build_manual(".")
+document()

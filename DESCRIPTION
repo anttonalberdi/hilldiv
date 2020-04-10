@@ -1,0 +1,70 @@
+Package: hilldiv
+Title: Integral Analysis of Diversity Based on Hill Numbers
+Version: 1.5.3
+Author: Antton Alberdi [aut, cre]
+Maintainer: Antton Alberdi <antton.alberdi@bio.ku.dk>
+Description: Tools for analysing, comparing, visualising and partitioning diversity based on Hill numbers.
+  'hilldiv' is an R package that provides a set of functions to assist analysis of diversity for
+  diet reconstruction, microbial community profiling or more general ecosystem characterisation
+  analyses based on Hill numbers, using OTU/ASV tables and associated phylogenetic trees as
+  inputs. The package includes functions for (phylo)diversity measurement, (phylo)diversity
+  profile plotting, (phylo)diversity comparison between samples and groups, (phylo)diversity
+  partitioning and (dis)similarity measurement. All of these grounded in abundance-based and
+  incidence-based Hill numbers.
+  The statistical framework developed around Hill numbers encompasses many of the most
+  broadly employed diversity (e.g. richness, Shannon index, Simpson index),
+  phylogenetic diversity (e.g. Faith's PD, Allen's H, Rao's quadratic entropy) and
+  dissimilarity (e.g. Sorensen index, Unifrac distances) metrics. This enables the most
+  common analyses of diversity to be performed while grounded in a single statistical
+  framework. The methods are described in Jost et al. (2007) <DOI:10.1890/06-1736.1>,
+  Chao et al. (2010) <DOI:10.1098/rstb.2010.0272> and Chiu et al. (2014)
+  <DOI:10.1890/12-0960.1>; and reviewed in the framework of molecularly characterised
+  biological systems in Alberdi & Gilbert (2019) <DOI:10.1111/1755-0998.13014>.
+License: GPL-3
+LazyData: true
+URL: https://github.com/anttonalberdi/hilldiv
+BugReports: https://github.com/anttonalberdi/hilldiv/issues
+Depends:
+    R (>= 3.1.0)
+Suggests:
+Imports:
+    stats,
+    ggplot2,
+    scales,
+    ggpubr,
+    RColorBrewer,
+    data.table,
+    ape,
+    vegan,
+    geiger,
+    qgraph,
+    FSA
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Collate:
+    'index_div.R'
+    'hill_div.R'
+    'div_profile.R'
+    'div_profile_plot.R'
+    'div_test.R'
+    'div_test_plot.R'
+    'depth_cov.R'
+    'div_part.R'
+    'alpha_div.R'
+    'gamma_div.R'
+    'beta_dis.R'
+    'pair_dis.R'
+    'pair_dis_plot.R'
+    'UqN.R'
+    'CqN.R'
+    'VqN.R'
+    'SqN.R'
+    'match_data.R'
+    'merge_samples.R'
+    'depth_filt.R'
+    'copy_filt.R'
+    'to.incidence.R'
+    'tss.R'
+    'is.nested.R'
+    'tree_depth.R'
+    'data.R'
