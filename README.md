@@ -1,7 +1,7 @@
-# hilldiv 1.5.3
-### Last update: February 2020
+# hilldiv 1.5.4
+### Last update: April 2020
 
-:warning: **This version of hilldiv (1.5.3) is different to the version available at CRAN (1.5.1). The CRAN package will be updated when validating all changes. **
+:warning: **This version of hilldiv (1.5.4) is different to the version available at CRAN (1.5.1). The CRAN package will be updated when validating all changes. **
 
 **hilldiv** is an R package that provides a set of functions to assist analysis of diversity for diet reconstruction, microbial community profiling or more general ecosystem characterisation analyses based on Hill numbers, using OTU/ASV tables and associated phylogenetic trees as inputs. The package includes functions for (phylo)diversity measurement, (phylo)diversity profile plotting, (phylo)diversity comparison between samples and groups,  (phylo)diversity partitioning and (dis)similarity measurement. All of these grounded in abundance-based and incidence-based Hill numbers.
 
