@@ -13,7 +13,7 @@ Alberdi A, Gilbert MTP. (2019). A guide to the application of Hill numbers to DN
 
 Some recent papers that used hilldiv:
 
-* Maechler et al. (2020) Decision making and best practices for taxonomy-free eDNA metabarcoding in biomonitoring using Hill numbers. *bioRxiv*. 2020.03.31.017723. https://www.biorxiv.org/content/10.1101/2020.03.31.017723v1
+* Maechler et al. (2020) Decision making and best practices for taxonomy-free eDNA metabarcoding in biomonitoring using Hill numbers. *bioRxiv*. https://www.biorxiv.org/content/10.1101/2020.03.31.017723v1
 
 * Alberdi et al. (2020) DNA metabarcoding and spatial modelling link diet diversification with distribution homogeneity in European bats. *Nature Communications*. https://www.nature.com/articles/s41467-020-14961-2
 
@@ -42,6 +42,7 @@ Some recent papers that used hilldiv:
 | SqN()  | Jaccard-type turnover-complement from beta diversities   | [LINK](documentation/SqN.md) |
 | VqN()  | Sørensen-type turnover-complement from beta diversities   | [LINK](documentation/VqN.md) |
 | to.incidence()  | Convert an abundance-based count (OTU/ASV) table into an incidence-based object | [LINK](documentation/to.incidence.md) |
+| to.occurrences()  | Convert an abundance-based vector or matrix to occurrences | To be added |
 | merge_samples()  | Combine samples into groups defined by the hierarchy table. | [LINK](documentation/merge_samples.md) |
 | match_data()  | Filter count tables and trees to match OTUs/ASVs in both data files   | [LINK](documentation/match_data.md) |
 | depth_filt()  | Filter samples according to a minimum sequencing depth threshold   | [LINK](documentation/depth_filt.md) |

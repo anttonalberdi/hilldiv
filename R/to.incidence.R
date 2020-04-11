@@ -1,5 +1,5 @@
 #' To incidence
-#' @title Hill numbers computation
+#' @title Transform to incidence
 #' @author Antton Alberdi, \email{anttonalberdi@gmail.com}
 #' @keywords OTU ASV table abundance hill
 #' @description Transform a count (OTU/ASV) table from abundance to incidence.

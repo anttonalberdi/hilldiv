@@ -2,7 +2,7 @@
 % Please edit documentation in R/to.incidence.R
 \name{to.incidence}
 \alias{to.incidence}
-\title{Hill numbers computation}
+\title{Transform to incidence}
 \usage{
 to.incidence(otutable, hierarchy, relative)
 }
