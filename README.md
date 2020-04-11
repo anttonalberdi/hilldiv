@@ -1,7 +1,7 @@
 # hilldiv 1.5.4
 ### Last update: April 2020
 
-:warning: **This version of hilldiv (1.5.4) is different to the version available at CRAN (1.5.1). The CRAN package will be updated when validating all changes. **
+:warning: **This version of hilldiv (1.5.4) is different to the version available at CRAN (1.5.1). The CRAN package will be updated when validating all changes.**
 
 **hilldiv** is an R package that provides a set of functions to assist analysis of diversity for diet reconstruction, microbial community profiling or more general ecosystem characterisation analyses based on Hill numbers, using OTU/ASV tables and associated phylogenetic trees as inputs. The package includes functions for (phylo)diversity measurement, (phylo)diversity profile plotting, (phylo)diversity comparison between samples and groups,  (phylo)diversity partitioning and (dis)similarity measurement. All of these grounded in abundance-based and incidence-based Hill numbers.
 
@@ -13,7 +13,9 @@ Alberdi A, Gilbert MTP. (2019). A guide to the application of Hill numbers to DN
 
 Some recent papers that used hilldiv:
 
-* Alberdi et al. (2019) Diet diversification shapes broad-scale distribution patterns in European bats. *bioRxiv*. https://doi.org/10.1101/704759
+* Maechler et al. (2020) Decision making and best practices for taxonomy-free eDNA metabarcoding in biomonitoring using Hill numbers. *bioRxiv*. 2020.03.31.017723. https://www.biorxiv.org/content/10.1101/2020.03.31.017723v1
+
+* Alberdi et al. (2020) DNA metabarcoding and spatial modelling link diet diversification with distribution homogeneity in European bats. *Nature Communications*. https://www.nature.com/articles/s41467-020-14961-2
 
 * Siren et al. (2019) Taxonomic and Functional Characterization of the Microbial Community During Spontaneous in vitro Fermentation of Riesling Must. *Frontiers in Microbiology*. https://doi.org/10.3389/fmicb.2019.00697
 
