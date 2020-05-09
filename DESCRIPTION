@@ -64,6 +64,7 @@ Collate:
     'depth_filt.R'
     'copy_filt.R'
     'to.incidence.R'
+    'to.occurrences.R'
     'tss.R'
     'is.nested.R'
     'tree_depth.R'
