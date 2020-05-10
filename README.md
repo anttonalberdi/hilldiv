@@ -63,7 +63,7 @@ Or alternatively, you need to 1) install devtools, 2) load devtools library, 3) 
 install.packages("devtools")
 library(devtools)
 install_github("anttonalberdi/hilldiv")
-library(hilldiv,quietly=TRUE)
+library(hilldiv)
 ````
 If not installed, it will automatically install the following dependencies: ggplot2, ggpubr, RColorBrewer, data.table, ape, vegan, geiger, qgraph and FSA.
 
@@ -74,6 +74,14 @@ If the console returns the following error:
 Type the following in the console and restart R
 ````R
 system('defaults write org.R-project.R force.LANG en_US.UTF-8')
+````
+
+# Updating
+If you want to update your local hilldiv library from Github, you can use the following script:
+````R
+remove.packages("hilldiv")
+install_github("anttonalberdi/hilldiv")
+library(hilldiv)
 ````
 
 # Workflow
