@@ -37,6 +37,7 @@ Some recent papers that used hilldiv:
 | beta_dis()  | (Dis)similarity computation based on beta diversities   | [LINK](documentation/beta_dis.md) |
 | pair_dis()  | Pairwise (dis)similarity computation based on beta diversities   | [LINK](documentation/pair_dis.md) |
 | pair_dis_plot()  | Visual representation of pairwise (dis)similarities   | [LINK](documentation/pair_dis_plot.md) |
+| dis_nmds()  | NMDS representation pairwise (dis)similarities   | To be added |
 | UqN()  | Jaccard-type overlap computation from beta diversities | [LINK](documentation/UqN.md) |
 | CqN()  | Sørensen-type overlap from beta diversities   | [LINK](documentation/CqN.md) |
 | SqN()  | Jaccard-type turnover-complement from beta diversities   | [LINK](documentation/SqN.md) |
