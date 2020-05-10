@@ -40,7 +40,7 @@ Imports:
     qgraph,
     FSA
 Encoding: UTF-8
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 Collate:
     'index_div.R'
     'hill_div.R'
@@ -55,6 +55,7 @@ Collate:
     'beta_dis.R'
     'pair_dis.R'
     'pair_dis_plot.R'
+    'dis_nmds.R'
     'UqN.R'
     'CqN.R'
     'VqN.R'

@@ -4,7 +4,9 @@
 \name{bat.diet.tree}
 \alias{bat.diet.tree}
 \title{Bat diet OTU tree}
-\format{A phylo object with 363 tips and 362 internal nodes.}
+\format{
+A phylo object with 363 tips and 362 internal nodes.
+}
 \usage{
 bat.diet.tree
 }

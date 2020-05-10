@@ -4,7 +4,9 @@
 \name{bat.diet.hierarchy}
 \alias{bat.diet.hierarchy}
 \title{Bat diet hierarchy}
-\format{A data frame with 40 rows and 2 columns.}
+\format{
+A data frame with 40 rows and 2 columns.
+}
 \usage{
 bat.diet.hierarchy
 }

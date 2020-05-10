@@ -21,10 +21,10 @@ pair_dis_plot(distance, hierarchy, type, colour, magnify)
 An NMDS or network plot.
 }
 \description{
-Visualisation of pairwise dissimilarities
+Visualisation of pairwise dissimilarities. Not this function is deprecated. Use dis_nmds() and dis_network() instead.
 }
 \details{
-Pairwise dissimilarity plot
+Pairwise dissimilarity plot (deprecated)
 }
 \examples{
 data(bat.diet.otutable)

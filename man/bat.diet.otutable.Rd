@@ -4,7 +4,9 @@
 \name{bat.diet.otutable}
 \alias{bat.diet.otutable}
 \title{Bat diet OTU table}
-\format{A data frame with 363 rows and 40 species.}
+\format{
+A data frame with 363 rows and 40 species.
+}
 \usage{
 bat.diet.otutable
 }

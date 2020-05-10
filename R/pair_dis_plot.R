@@ -1,8 +1,8 @@
-#' Pairwise dissimilarity plot
+#' Pairwise dissimilarity plot (deprecated)
 #' @title Pairwise dissimilarity plot
 #' @author Antton Alberdi, \email{anttonalberdi@gmail.com}
 #' @keywords hill numbers diversity partitioning pairwise
-#' @description Visualisation of pairwise dissimilarities
+#' @description Visualisation of pairwise dissimilarities. Not this function is deprecated. Use dis_nmds() and dis_network() instead.
 #' @param distance Matrix of pairwise dissimilarities, usually one of the matrices listed in the output object of the pair_dis() function.
 #' @param hierarchy The first column lists the sample names while the second lists the groups. If provided, group profiles are plotted instead of individual profiles.
 #' @param type Whether to plot a NMDS, Shepard or qgraph chart. type="NMDS".
