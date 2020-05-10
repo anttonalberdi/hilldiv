@@ -4,7 +4,7 @@
 \alias{dis_nmds}
 \title{Dissimilarity NMDS plot}
 \usage{
-dis_nmds(distance, hierarchy, colour, plot, centroids, labels, runs)
+dis_nmds(distance, hierarchy, colour, plot, centroids, labels, legend, runs)
 }
 \arguments{
 \item{distance}{Matrix of pairwise dissimilarities, usually one of the matrices listed in the output object of the pair_dis() function.}
@@ -18,6 +18,8 @@ dis_nmds(distance, hierarchy, colour, plot, centroids, labels, runs)
 \item{centroids}{Whether to link sample dots with group centroids or not. A hierarchy table is necessary to draw centroids. Default: FALSE}
 
 \item{labels}{Whether to print sample or group labels or both. A hierarchy table is necessary to plot grpup names. Default: "none".}
+
+\item{legend}{Whether to print the legend or not. Default: TRUE.}
 
 \item{runs}{Number of iterations for the NMDS function. Default: 100.}
 }

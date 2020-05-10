@@ -9,6 +9,7 @@
 #' @param colour The number of vector items (colours, e.g. '#34k235'), must be of length one if no hierarchy table is added, or must equal the number of groups if the hierarchy table is provided.
 #' @param centroids Whether to link sample dots with group centroids or not. A hierarchy table is necessary to draw centroids. Default: FALSE
 #' @param labels Whether to print sample or group labels or both. A hierarchy table is necessary to plot grpup names. Default: "none".
+#' @param legend Whether to print the legend or not. Default: TRUE.
 #' @param runs Number of iterations for the NMDS function. Default: 100.
 #' @return An NMDS or Shepard plot.
 #' @seealso \code{\link{pair_dis}}, \code{\link{beta_dis}}
@@ -32,10 +33,11 @@
 #' Jost, L. (2007). Partitioning diversity into independent alpha and beta components. Ecology, 88, 2427-2439.
 #' @export
 
-dis_nmds <- function(distance,hierarchy,colour,plot,centroids,labels,runs){
+dis_nmds <- function(distance,hierarchy,colour,plot,centroids,labels,legend,runs){
 
 if(missing(plot)){plot = "NMDS"}
 if(missing(centroids)){centroids = FALSE}
+if(missing(legend)){legend = TRUE}
 if(missing(labels)){labels = "none"}
 if((centroids == TRUE) & missing(hierarchy))stop("A hierarchy table is necessary to draw centroids.")
 if((labels == "group") & missing(hierarchy))stop("A hierarchy table is necessary to print group names.")
@@ -110,6 +112,10 @@ if(plot == "NMDS"){
   if(labels == "sample" || labels == "both"){
   nmds.plot <- nmds.plot + geom_text_repel(aes(x=x,y=y,label=Sample),size=2,vjust=0,segment.size=0,box.padding=0.1,point.padding=0.1)
   }
+
+	if(legend == FALSE){
+	nmds.plot <- nmds.plot + theme(legend.position = "none")
+	}
 
   return(nmds.plot)
 
