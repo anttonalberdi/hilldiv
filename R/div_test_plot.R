@@ -38,8 +38,12 @@ divtestdata$Group <- factor(divtestdata$Group, levels = as.character(unique(divt
 
 #Declare colours
 if(missing(colour) || (length(colour) < divtest$groups)){
-getPalette <- colorRampPalette(brewer.pal(divtest$groups, "Paired"))
-colour <- getPalette(divtest$groups)
+  if(divtest$groups == 2){
+    colour=c("#96c3dc","#1b63a5")
+  }else{
+    getPalette <- colorRampPalette(brewer.pal(divtest$groups, "Paired"))
+    colour <- getPalette(divtest$groups)
+  }
 }
 
 if(posthoc == TRUE){
