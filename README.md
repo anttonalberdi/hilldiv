@@ -1,4 +1,10 @@
 # hilldiv 1.5.4
+
+> ⚠️ **This package is no longer maintained.**
+> hilldiv has been superseded by **hilldiv3**:
+> 👉 https://github.com/alberdilab/hilldiv3
+> Please migrate — no further updates or bug fixes will be made here.
+
 ### Last update: April 2020
 
 :warning: **This version of hilldiv (1.5.4) is different to the version available at CRAN (1.5.1). The CRAN package will be updated when validating all changes.**
