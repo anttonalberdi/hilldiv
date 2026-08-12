@@ -34,6 +34,8 @@
 #' @export
 
 dis_nmds <- function(distance,hierarchy,colour,plot,centroids,labels,legend,runs){
+  x <- y <- Group <- x_cen <- y_cen <- Sample <- NULL
+  ## Above to avoid CRAN NOTE.
 
 if(missing(plot)){plot = "NMDS"}
 if(missing(centroids)){centroids = FALSE}

@@ -7,7 +7,7 @@
 #' @param hierarchy A two-column matrix indicating the relation between samples (first column) and groups (second column).
 #' @param relative Whether to output relative values or not. Default=TRUE.
 #' @param incidence Whether to transform abundance into incidence data when merging. Default=FALSE.
-#' @usage merge_samples(countable,hierarchy,incidence)
+#' @usage merge_samples(countable,hierarchy,relative,incidence)
 #' @return A count table
 #' @seealso \code{\link{to.incidence}}
 #' @examples

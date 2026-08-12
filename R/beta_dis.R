@@ -29,7 +29,7 @@ beta_dis <- function(beta,qvalue,N,metric,type){
 
 #Quality-check and warnings
 if(missing(beta)) stop("Beta diversity value or div_part output object is missing")
-if(class(beta) == "numeric"){
+if(is.numeric(beta)){
   betan <- length(beta)
   betas <- beta
   Ns <- N
@@ -38,7 +38,7 @@ if(class(beta) == "numeric"){
   if(missing(N)) stop("The number of samples or groups (N) is missing")
 }
 
-if(class(beta) == "list"){
+if(is.list(beta)){
   if(names(beta[2]) != "Order_diversity") stop("The input object is not valid")
   betan <- length(beta$Beta)
   qvalue <- beta$Order_diversity

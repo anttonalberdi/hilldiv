@@ -16,7 +16,7 @@
 #' @export
 
 tree_depth <- function(tree,abund){
-if(class(tree) != "phylo") stop("Tree needs to be an object of class Phylo")
+if(!inherits(tree, "phylo")) stop("Tree needs to be an object of class Phylo")
 if(is.null(dim(abund)) == TRUE){
   vector <- tss(abund)
   }

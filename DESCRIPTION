@@ -1,6 +1,8 @@
 Package: hilldiv
 Title: Integral Analysis of Diversity Based on Hill Numbers
-Version: 1.5.3
+Version: 1.5.99
+Authors@R: c(person(given = "Antton", family = "Alberdi", role = c("aut", "cre"), email = "antton.alberdi@bio.ku.dk"),
+  person("Toby","Hocking", role="ctb", comment = c(ORCID="0000-0002-3146-0865")))
 Author: Antton Alberdi [aut, cre]
 Maintainer: Antton Alberdi <antton.alberdi@bio.ku.dk>
 Description: Tools for analysing, comparing, visualising and partitioning diversity based on Hill numbers.
@@ -33,14 +35,14 @@ Imports:
     scales,
     ggpubr,
     RColorBrewer,
-    data.table,
     ape,
     vegan,
     geiger,
     qgraph,
-    FSA
+    FSA,
+    ggrepel
 Encoding: UTF-8
-RoxygenNote: 7.1.0
+RoxygenNote: 7.3.2
 Collate:
     'index_div.R'
     'hill_div.R'

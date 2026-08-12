@@ -4,7 +4,7 @@
 \alias{merge_samples}
 \title{Merge samples}
 \usage{
-merge_samples(countable,hierarchy,incidence)
+merge_samples(countable,hierarchy,relative,incidence)
 }
 \arguments{
 \item{countable}{A count table (matrix/data.frame) indicating the absolute or relative OTU/ASV abundances of multiple samples. Columns must refer to samples and rows to OTUs/ASVs.}

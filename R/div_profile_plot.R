@@ -10,7 +10,6 @@
 #' @return A diversity profile plot.
 #' @seealso \code{\link{div_profile}}, \code{\link{hill_div}}
 #' @import ggplot2
-#' @importFrom data.table melt
 #' @examples
 #' data(bat.diet.otutable)
 #' data(bat.diet.hierarchy)
@@ -66,10 +65,10 @@ if(inputtype == "onesample"){
 
 #Multiple samples/groups
 if(inputtype == "multiplesamples"){
-  profile.melted <- as.data.frame(melt(profile))
-  colnames(profile.melted) <- c("Order","Sample","Value")
-  profile.melted[,1] <- as.numeric(as.character(profile.melted[,1]))
-  profile.melted[,3] <- as.numeric(as.character(profile.melted[,3]))
+  profile.melted <- data.frame(
+    Order=as.numeric(rownames(profile)[row(profile)]),
+    Sample=colnames(profile)[col(profile)],
+    Value=as.numeric(profile))
   if(log == TRUE){profile.melted[,3] <- log(profile.melted[,3])}
 
   #Plot

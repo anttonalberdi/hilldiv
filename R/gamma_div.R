@@ -47,7 +47,7 @@ if(missing(tree)){
     return(div)
 }else{
     #Phylogenetic
-    if(class(tree) != "phylo") stop("Tree needs to be an object of class Phylo")
+    if(!inherits(tree, "phylo")) stop("Tree needs to be an object of class Phylo")
     if(is.ultrametric(tree) == FALSE) stop("Tree needs to be ultrametric")
     if(identical(sort(rownames(countable)),sort(tree$tip.label)) == FALSE) stop("OTU/ASV names in the count table and tree do not match. Use match_data() to solve this issue.")
     countable <- as.data.frame(countable)

@@ -1,5 +1,8 @@
 # Changelog
 
+### v1.5.99 | December 2024
+- `div_profile_plot()` uses `data.frame()` with `row()`, `col()`, etc, instead of `data.table::melt()` (which no longer redirects to reshape2, so no longer works on matrices).
+
 ### v1.5.3 | February 2020
 - Bug corrected in pair_dis().
 - Bug corrected in div_part(). 

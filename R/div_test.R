@@ -41,7 +41,7 @@ if(missing(posthoc)){posthoc=FALSE}
 if(missing(tree)){
 div.values <- hill_div(countable,qvalue)
 }else{
-if(class(tree) != "phylo") stop("Tree needs to be an object of class Phylo")
+if(!inherits(tree, "phylo")) stop("Tree needs to be an object of class Phylo")
 if(identical(sort(rownames(countable)),sort(tree$tip.label)) == FALSE) stop("OTU/ASV names in the count table and tree do not match. Use match_data() to address this issue.")
 div.values <- hill_div(countable,qvalue,tree)
 }
