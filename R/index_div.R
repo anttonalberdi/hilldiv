@@ -39,8 +39,8 @@ index_div <- function(abund,tree,index){
 
 #Data input control
 if(missing(abund)) stop("Abundance data is missing")
-if(missing(index) & missing(tree)){index="richness"}
-if(missing(index) & !missing(tree)){index="faith"}
+if(missing(index) && missing(tree)){index="richness"}
+if(missing(index) && !missing(tree)){index="faith"}
 
 #Input data type identification
 if(is.null(dim(abund)) == TRUE){

@@ -28,7 +28,7 @@
 div_test_plot <- function(divtest,chart,colour,posthoc,threshold){
 if(missing(chart)){chart="box"}
 if(missing(posthoc)){posthoc=FALSE}
-if((names(divtest)[1] != "data") & (names(divtest)[2] != "normality.pvalue")) stop("The input object does not seem to be a div_test output.")
+if((names(divtest)[1] != "data") && (names(divtest)[2] != "normality.pvalue")) stop("The input object does not seem to be a div_test output.")
 
 #Get data table
 divtestdata <- divtest$data

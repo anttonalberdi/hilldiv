@@ -101,7 +101,7 @@ leveln <- ncol(hierarchy)
 }else{
 leveln <- 1
 }
-levels <- paste(rep("L",leveln),seq(1:leveln),sep="")
+levels <- paste0(rep("L",leveln),seq(1:leveln))
 if(!missing(hierarchy)){
   hierarchy[] <- lapply(hierarchy, as.character)
   colnames(hierarchy) <- levels
@@ -187,11 +187,11 @@ if('V' %in% metric){results <- append(results, list(VqN=VqN.matrix))}
 if('S' %in% metric){results <- append(results, list(SqN=SqN.matrix))}
 
 #Append matrix names
-names <- c(names,paste(paste("L",i,sep=""),"beta",sep="_"))
-if('C' %in% metric){names <- c(names,paste(paste("L",i,sep=""),"CqN",sep="_"))}
-if('U' %in% metric){names <- c(names,paste(paste("L",i,sep=""),"UqN",sep="_"))}
-if('V' %in% metric){names <- c(names,paste(paste("L",i,sep=""),"VqN",sep="_"))}
-if('S' %in% metric){names <- c(names,paste(paste("L",i,sep=""),"SqN",sep="_"))}
+names <- c(names,paste(paste0("L",i),"beta",sep="_"))
+if('C' %in% metric){names <- c(names,paste(paste0("L",i),"CqN",sep="_"))}
+if('U' %in% metric){names <- c(names,paste(paste0("L",i),"UqN",sep="_"))}
+if('V' %in% metric){names <- c(names,paste(paste0("L",i),"VqN",sep="_"))}
+if('S' %in% metric){names <- c(names,paste(paste0("L",i),"SqN",sep="_"))}
 }
 
 #Modify names

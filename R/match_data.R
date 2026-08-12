@@ -27,10 +27,10 @@ if(missing(silent)){silent=FALSE}
   tree.otus <- tree$tip.label
 
 if(missing(output)){
-  if((length(setdiff(tree.otus,countable.otus)) == 0) & (length(setdiff(countable.otus,tree.otus)) == 0)){message("OTUs in the OTU table and OTU tree match perfectly.")}
-  if((length(setdiff(tree.otus,countable.otus)) > 0) & (length(setdiff(countable.otus,tree.otus)) == 0)){message("The OTU tree contains OTUs absent in the OTU table. Filter the OTU tree")}
-  if((length(setdiff(tree.otus,countable.otus)) == 0) & (length(setdiff(countable.otus,tree.otus)) > 0)){message("The OTU table contains OTUs absent in the OTU tree. Filter the OTU table")}
-  if((length(setdiff(tree.otus,countable.otus)) > 0) & (length(setdiff(countable.otus,tree.otus)) > 0)){message("The OTU table contains OTUs absent in the OTU tree and the OTU tree contains OTUs absent in the OTU table. Filter both files")}
+  if((length(setdiff(tree.otus,countable.otus)) == 0) && (length(setdiff(countable.otus,tree.otus)) == 0)){message("OTUs in the OTU table and OTU tree match perfectly.")}
+  if((length(setdiff(tree.otus,countable.otus)) > 0) && (length(setdiff(countable.otus,tree.otus)) == 0)){message("The OTU tree contains OTUs absent in the OTU table. Filter the OTU tree")}
+  if((length(setdiff(tree.otus,countable.otus)) == 0) && (length(setdiff(countable.otus,tree.otus)) > 0)){message("The OTU table contains OTUs absent in the OTU tree. Filter the OTU table")}
+  if((length(setdiff(tree.otus,countable.otus)) > 0) && (length(setdiff(countable.otus,tree.otus)) > 0)){message("The OTU table contains OTUs absent in the OTU tree and the OTU tree contains OTUs absent in the OTU table. Filter both files")}
   output="NA"
 }
 
@@ -51,7 +51,7 @@ if(output == "countable"){
     }
     return(countable.filt)
   }
-  if((length(setdiff(tree.otus,countable.otus)) == 0) & (length(setdiff(countable.otus,tree.otus)) == 0)){
+  if((length(setdiff(tree.otus,countable.otus)) == 0) && (length(setdiff(countable.otus,tree.otus)) == 0)){
     if(silent == FALSE){
     message("OTUs/ASVs in the count table and tree match perfectly. No new count table was created.")
     }
@@ -77,7 +77,7 @@ if(output == "tree"){
     }
     return(tree)
   }
-  if((length(setdiff(tree.otus,countable.otus)) == 0) & (length(setdiff(countable.otus,tree.otus)) == 0)){
+  if((length(setdiff(tree.otus,countable.otus)) == 0) && (length(setdiff(countable.otus,tree.otus)) == 0)){
     if(silent == FALSE){
     message("OTUs/ASVs in the tree and count table match perfectly. No new tree was created.")
     }

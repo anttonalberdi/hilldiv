@@ -39,9 +39,9 @@ if(missing(plot)){plot = "NMDS"}
 if(missing(centroids)){centroids = FALSE}
 if(missing(legend)){legend = TRUE}
 if(missing(labels)){labels = "none"}
-if((centroids == TRUE) & missing(hierarchy))stop("A hierarchy table is necessary to draw centroids.")
-if((labels == "group") & missing(hierarchy))stop("A hierarchy table is necessary to print group names.")
-if((labels == "both") & missing(hierarchy))stop("A hierarchy table is necessary to print group names.")
+if((centroids == TRUE) && missing(hierarchy))stop("A hierarchy table is necessary to draw centroids.")
+if((labels == "group") && missing(hierarchy))stop("A hierarchy table is necessary to print group names.")
+if((labels == "both") && missing(hierarchy))stop("A hierarchy table is necessary to print group names.")
 if(missing(runs)){runs = 100}
 
 
@@ -66,7 +66,7 @@ if(!missing(hierarchy)){
   }
 }
 
-if(missing(hierarchy) & (length(colour) != 1))stop("The colour vector can only contain one value when not specifying a hierarchy table")
+if(missing(hierarchy) && (length(colour) != 1))stop("The colour vector can only contain one value when not specifying a hierarchy table")
 
 ######
 # NMDS plot

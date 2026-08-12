@@ -57,7 +57,7 @@ if ('C' %in% metric){
   CqNs <- c()
   for(i in c(1:betan)){
   CqNs <- c(CqNs,CqN(betas[i],qvalue,Ns[i]))
-  names(CqNs)[i] <- paste("L",paste(i,i+1,sep="_"),sep="")
+  names(CqNs)[i] <- paste0("L",paste(i,i+1,sep="_"))
   }
   if (type == "dissimilarity"){
     rCqNs <- 1 - CqNs
@@ -72,7 +72,7 @@ if ('U' %in% metric){
   UqNs <- c()
   for(i in c(1:betan)){
   UqNs <- c(UqNs,UqN(betas[i],qvalue,Ns[i]))
-  names(UqNs)[i] <- paste("L",paste(i,i+1,sep="_"),sep="")
+  names(UqNs)[i] <- paste0("L",paste(i,i+1,sep="_"))
   }
   if (type == "dissimilarity"){
     rUqNs <- 1 - UqNs
@@ -87,7 +87,7 @@ if ('V' %in% metric){
   VqNs <- c()
   for(i in c(1:betan)){
   VqNs <- c(VqNs,VqN(betas[i],Ns[i]))
-  names(VqNs)[i] <- paste("L",paste(i,i+1,sep="_"),sep="")
+  names(VqNs)[i] <- paste0("L",paste(i,i+1,sep="_"))
   }
   if (type == "dissimilarity"){
     rVqNs <- 1 - VqNs
@@ -102,7 +102,7 @@ if ('S' %in% metric){
   SqNs <- c()
   for(i in c(1:betan)){
   SqNs <- c(SqNs,SqN(betas[i],Ns[i]))
-  names(SqNs)[i] <- paste("L",paste(i,i+1,sep="_"),sep="")
+  names(SqNs)[i] <- paste0("L",paste(i,i+1,sep="_"))
   }
   if (type == "dissimilarity"){
     rSqNs <- 1 - SqNs

@@ -75,7 +75,7 @@ if(is.nested(hierarchy) == FALSE) stop("The groups in the hierarchy table are no
 
 #Count number of levels
 leveln <- ncol(hierarchy)
-levels <- paste(rep("L",leveln+1),seq(1:(leveln+1)),sep="")
+levels <- paste0(rep("L",leveln+1),seq(1:(leveln+1)))
 
 #Convert hierarchy columns to character
 hierarchy[] <- lapply(hierarchy, as.character)
@@ -129,14 +129,14 @@ beta.vector <- c()
 N.vector <- c()
 for(b in c(1:(leveln))){
 beta <- div.vector[b+1]/div.vector[b]
-names(beta) <- paste("B",paste(b,b+1,sep="_"),sep="")
+names(beta) <- paste0("B",paste(b,b+1,sep="_"))
 beta.vector <- c(beta.vector,beta)
 N <- ncol(count.tables[[b]])
 N.vector <- c(N.vector,N)
 }
 
 N.vector <- c(N.vector,1)
-names(N.vector) <- paste(rep("N",leveln+1),seq(1:(leveln+1)),sep="")
+names(N.vector) <- paste0(rep("N",leveln+1),seq(1:(leveln+1)))
 
 #Return values
 if (qvalue==0.99999) {qvalue=1}

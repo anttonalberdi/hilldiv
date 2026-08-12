@@ -48,7 +48,7 @@ colour <- colorRampPalette(brewer.pal(12, "Paired"))(ncol(profile))
 
 #Single sample/group
 if(inputtype == "onesample"){
-  if(length(colour != 1)){colour="#99cc00"}
+  if(length(colour) != 1){colour="#99cc00"}
   profile.melted <- as.data.frame(cbind(names(profile),profile))
   colnames(profile.melted) <- c("Order","Profile")
   profile.melted[,1] <- as.numeric(as.character(profile.melted[,1]))

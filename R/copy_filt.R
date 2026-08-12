@@ -21,7 +21,7 @@ copy_filt <- function(abund,threshold,filter){
   if(missing(filter)){filter=TRUE}
   if(is.null(dim(abund)) == FALSE){
   #It is an OTU table (multiple samples)
-  sapply(1:ncol(abund), function(colnum){temp = abund[,colnum]
+  sapply(seq_len(ncol(abund)), function(colnum){temp = abund[,colnum]
     if(threshold == round(threshold)){
     #Absolute
     rownums = which(temp < threshold)

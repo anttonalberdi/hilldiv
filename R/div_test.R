@@ -53,7 +53,7 @@ div.values.groups$Group <- as.factor(div.values.groups$Group)
 #Data distribution (normality and homogeneity) assessment
 shapiro <- shapiro.test(div.values.groups$Value)
 barlett <- bartlett.test(Value ~ Group, data= div.values.groups)
-if((shapiro$p.value >= 0.05) & (barlett$p.value >= 0.05)){
+if((shapiro$p.value >= 0.05) && (barlett$p.value >= 0.05)){
 norm.homo=TRUE
 }else{
 norm.homo=FALSE

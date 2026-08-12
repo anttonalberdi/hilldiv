@@ -54,7 +54,7 @@ if(!missing(hierarchy)){
 	colour <- getPalette(ncol(distance))
 }
 
-if(type == "NMDS" | type == "Shepard"){
+if(type == "NMDS" || type == "Shepard"){
 #NMDS plot
 values.NMDS<-metaMDS(as.dist(distance), k = 2, trymax = 400)
 if(missing(hierarchy)){
